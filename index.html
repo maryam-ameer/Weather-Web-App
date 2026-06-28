@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="brand">
+            <span class="logo">⛅</span>
+            <h1>Weather<span>Pro</span></h1>
+        </div>
+
+        <!-- Search -->
+        <div class="search">
+            <input type="text" id="cityInput" placeholder="Search city..." autofocus />
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <!-- Main Weather Display -->
+        <div id="weatherInfo">
+            <h2 id="cityName">--</h2>
+            <div class="temp-section">
+                <span id="temperature">--</span>
+                <span class="unit">°C</span>
+            </div>
+            <p id="description" class="condition">--</p>
+
+            <!-- Professional Metrics Grid -->
+            <div class="metrics-grid">
+                <div class="metric">
+                    <span class="label">💧 Humidity</span>
+                    <span class="value" id="humidity">--%</span>
+                </div>
+                <div class="metric">
+                    <span class="label">🌡️ Feels Like</span>
+                    <span class="value" id="feelsLike">--°C</span>
+                </div>
+                <div class="metric">
+                    <span class="label">💨 Wind</span>
+                    <span class="value" id="windSpeed">-- km/h</span>
+                </div>
+                <div class="metric">
+                    <span class="label">📊 Pressure</span>
+                    <span class="value" id="pressure">-- hPa</span>
+                </div>
+                <div class="metric">
+                    <span class="label">☔ Rain Chance</span>
+                    <span class="value" id="rainChance">--%</span>
+                </div>
+                <div class="metric">
+                    <span class="label">🕒 Updated</span>
+                    <span class="value" id="updateTime">--</span>
+                </div>
+            </div>
+        </div>
+
+        <p id="errorMsg" class="error hidden">❌ City not found. Please check spelling.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
